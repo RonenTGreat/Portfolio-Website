@@ -33,6 +33,11 @@
     }
 }
 
+/* General styles */
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: var(--clr-light);
@@ -389,6 +394,27 @@ header{
     z-index: 1000;
 }
 
+.nav-open .nav{
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle{
+    position: fixed;
+}
+
+.nav-open .hamburger{
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before{
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after{
+    opacity: 0;
+}
+
+
 .hamburger{
     display: block;
     position: relative;
@@ -397,7 +423,7 @@ header{
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
