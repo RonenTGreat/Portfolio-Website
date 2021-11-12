@@ -327,10 +327,6 @@ nav{
     text-decoration: none;
 }
 
-.footer__link{
-    font-weight: var(--fw-bold);
-}
-
 .foot__link:hover,
 .social__list-link:hover{
     opacity: 0.8;
@@ -360,5 +356,4 @@ nav{
     font-size: small;
     margin: 2em 0 0;
     color: gray;
-
 }
