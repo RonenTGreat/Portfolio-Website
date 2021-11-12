@@ -61,23 +61,32 @@ strong{font-weight: var(--fw-bold);}
 
 /* buttons */
 
-.btn{
-    display: inline-block;
-    padding: .5em 2.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
-
+.btn {
+  background: #00adb5;
+  background-image: -webkit-linear-gradient(top, #00adb5, #10c9cf);
+  background-image: -moz-linear-gradient(top, #00adb5, #10c9cf);
+  background-image: -ms-linear-gradient(top, #00adb5, #10c9cf);
+  background-image: -o-linear-gradient(top, #00adb5, #10c9cf);
+  background-image: linear-gradient(to bottom, #00adb5, #10c9cf);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
 }
 
-.btn:hover{
-    transform: scale(1.1);
+.btn:hover {
+  background: #8af0f2;
+  background-image: -webkit-linear-gradient(top, #8af0f2, #639294);
+  background-image: -moz-linear-gradient(top, #8af0f2, #639294);
+  background-image: -ms-linear-gradient(top, #8af0f2, #639294);
+  background-image: -o-linear-gradient(top, #8af0f2, #639294);
+  background-image: linear-gradient(to bottom, #8af0f2, #639294);
+  text-decoration: none;
 }
 
 /* Typography */
@@ -300,4 +309,56 @@ nav{
 .portfolio__item:focus .portfolio__img{
     transform: scale(1.2);
     opacity: .75;
+}
+
+/* Footer */
+
+.footer{
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__link{
+    font-weight: var(--fw-bold);
+}
+
+.foot__link:hover,
+.social__list-link:hover{
+    opacity: 0.8;
+}
+
+.foot__link:hover{
+    text-decoration: underline;
+}
+
+.social-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social--list__item{
+    margin: 0 .5em;
+}
+
+.social__list-link{
+    padding: .5em;
+}
+
+.copyright{
+    font-size: small;
+    margin: 2em 0 0;
+    color: gray;
+
 }
