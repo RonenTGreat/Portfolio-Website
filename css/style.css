@@ -282,8 +282,10 @@ header{
 }
 
 .about-me{
-    max-width: 1000px;
-    margin: 0 auto;
+    /* max-width: 1000px;
+    margin: 0 auto; */
+    background: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 .about-me__img{
