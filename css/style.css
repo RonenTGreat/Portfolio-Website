@@ -282,8 +282,6 @@ header{
 }
 
 .about-me{
-    /* max-width: 1000px;
-    margin: 0 auto; */
     background: var(--clr-dark);
     color: var(--clr-light);
 }
@@ -518,3 +516,13 @@ h4{
 .des{
     text-align: left;
 }
+
+.me_link{
+    text-decoration: none;
+    color: #719FB0;
+}
+
+.me_link:hover{
+    text-decoration: underline;
+}
+
