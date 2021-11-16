@@ -26,6 +26,14 @@
       rel="stylesheet"
     />
 
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/3fa41704cb.js"
@@ -41,20 +49,25 @@
         <span class="hamburger"></span>
       </button>
 
-      <nav class="nav">
+      <nav class="nav-css">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link"> Home </a></li>
           <li class="nav__item">
-            <a href="#about" class="nav__link"> About Me </a>
+            <a href="#home" class="nav__link"> Home </a>
           </li>
           <li class="nav__item">
-            <a href="#services" class="nav__link"> My Services </a>
+            <a href="#about" class="nav__link"> About Me </a>
           </li>
           <li class="nav__item">
             <a href="#work" class="nav__link"> Projects </a>
           </li>
           <li class="nav__item">
-            <a href="https://medium.com/@ronenh53" target="_blank" class="nav__link"> Blog </a>
+            <a
+              href="https://medium.com/@ronenh53"
+              target="_blank"
+              class="nav__link"
+            >
+              Blog
+            </a>
           </li>
         </ul>
       </nav>
@@ -63,7 +76,10 @@
     <!-- Introduction -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
-        Hello, I am <strong>Ronen</strong>
+        Hello, I am
+        <strong
+          ><span class="tag"><</span> Ronen <span class="tag">/></span></strong
+        >
       </h1>
       <p class="section__subtitle section__subtitle--intro">developer</p>
       <img
@@ -73,7 +89,7 @@
       />
     </section>
 
-        <!-- About me -->
+    <!-- About me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
       <p class="section__subtitle section__subtitle--about">
@@ -81,22 +97,37 @@
       </p>
 
       <div class="about-me__body">
-        <h3>What I hope to do</h3>
+        <h3 class="about-title">What I hope to do</h3>
         <p>
-          My purpose is to help as many people as possible with my software making them live a meaningful and enjoyable life.
+          My purpose is to help as many people as possible with my software
+          making them live a meaningful and enjoyable life.
         </p>
-        <h3>What I am doing</h3>
+        <h3 class="about-title">What I am doing</h3>
         <p>
-          I am currently a student of the University of Ghana studying BSc. Information Technology.
+          I am currently a student of the University of Ghana studying BSc.
+          Information Technology.
         </p>
-        <p>I am currently participating in the 100DaysOfCode on <a class="me_link" href="https://twitter.com/Ronen_T_G" target="_blank">twitter</a>. 
-          Hoping to better my programing skills + I like a good challenge!</p>
-        <h3>When I am not staring at lines of code</h3>
         <p>
-        <a href="https://www.goodreads.com/ronentgreat" target="_blank" class="me_link">Reading</a>  <i class="fas fa-book-reader"></i> |
-        Listening to music <i class="fas fa-headphones"></i>
+          I am currently participating in the 100DaysOfCode on
+          <a
+            class="me_link"
+            href="https://twitter.com/Ronen_T_G"
+            target="_blank"
+            >twitter</a
+          >. Hoping to better my programing skills + I like a good challenge!
         </p>
-
+        <h3 class="about-title">When I am not staring at lines of code</h3>
+        <p>
+          <a
+            href="https://www.goodreads.com/ronentgreat"
+            target="_blank"
+            class="me_link"
+            >Reading</a
+          >
+          <i class="fas fa-book-reader"></i> | Listening to music
+          <i class="fas fa-headphones"></i> | Watching Anime & Movies
+          <i class="fas fa-tv"></i>
+        </p>
       </div>
       <img
         src="images/ronen2.jpg"
@@ -109,44 +140,53 @@
     <section class="my-services" id="services">
       <h2 class="section__tile section__title--services">What I do</h2>
       <div class="services">
-        <div class="service">
-          <h3>Design</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minus
-            fugit architecto quaerat. Quos officia, voluptatem dolore corrupti
-            aperiam vel doloremque eaque praesentium deleniti et quidem, ad,
-            iusto dolores. Veniam quasi suscipit est modi perspiciatis optio
-            cupiditate voluptates, natus quaerat!
-          </p>
+        <div
+          class="card text-white card-css mb-3"
+          style="text-align: left; max-width: 18rem"
+        >
+          <div class="card-header">Toolbox</div>
+          <div class="card-body">
+            <p class="card-text card-p">
+              <b>Languages: </b>HTML5, CSS3, Bootstrap <br />
+              <b>IDE: </b>Micrsoft VS Code <br />
+              <b>VCS: </b>Git/GitHub<br />
+              <b>Debugger: </b>Chrome DevTools
+            </p>
+          </div>
         </div>
 
-        <div class="service">
-          <h3>Development</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-            quod architecto, dolore fugit commodi optio. Cumque neque explicabo
-            exercitationem eligendi corrupti ipsum nam rerum nulla laborum sit
-            facilis tempore debitis porro praesentium est error sunt saepe,
-            doloribus aut nobis! Consectetur?
-          </p>
+        <div
+          class="card text-white card-css mb-3"
+          style="text-align: left; max-width: 18rem"
+        >
+          <div class="card-header">Learning</div>
+          <div class="card-body">
+            <p class="card-text card-p">
+              <b>Languages: </b>HTML5, CSS3, Bootstrap <br />
+              <b>IDE: </b>Micrsoft VS Code <br />
+              <b>VCS: </b>Git/GitHub<br />
+              <b>Debugger: </b>Chrome DevTools
+            </p>
+          </div>
         </div>
 
-        <div class="service">
-          <h3>WordPress</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            temporibus animi maxime quos delectus saepe laudantium aspernatur
-            consectetur recusandae error, ratione, id nostrum, explicabo quaerat
-            dolore et voluptatem sed eum officia! Unde nam soluta culpa minima.
-            Praesentium voluptates sit id?
-          </p>
+        <div
+          class="card text-white card-css mb-3"
+          style="text-align: left; max-width: 18rem"
+        >
+          <div class="card-header">Keeping Up</div>
+          <div class="card-body">
+            <p class="card-text card-p">
+              <b>Languages: </b>HTML5, CSS3, Bootstrap <br />
+              <b>IDE: </b>Micrsoft VS Code <br />
+              <b>VCS: </b>Git/GitHub<br />
+              <b>Debugger: </b>Chrome DevTools
+            </p>
+          </div>
         </div>
+
       </div>
-      <a href="#work" class="btn">My Projects</a>
     </section>
-
-
-
     <!-- My Work -->
     <section class="my-work" id="work">
       <h2 class="section__title section__title--work">Projects</h2>
@@ -155,60 +195,79 @@
       </p>
 
       <div class="portfolio">
-        <div class="card">
-          
-          <div class="container">
+        <div class="card-port">
+          <div class="container-port">
             <a href="#" class="portfolio__item" target="_blank">
-            <img
-              src="https://images.pexels.com/photos/2708981/pexels-photo-2708981.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-              class="portfolio__img"
-            />
-          </a>
+              <img
+                src="https://images.pexels.com/photos/2708981/pexels-photo-2708981.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+                class="portfolio__img"
+              />
+            </a>
             <h4>Project 1</h4>
-            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, exercitationem laborum voluptatum consequatur id sapiente fugit maiores voluptate est quam tempore quidem nostrum eius eligendi beatae iure incidunt asperiores sed.</p>
+            <p class="des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+              exercitationem laborum voluptatum consequatur id sapiente fugit
+              maiores voluptate est quam tempore quidem nostrum eius eligendi
+              beatae iure incidunt asperiores sed.
+            </p>
           </div>
         </div>
 
-        <div class="card">
-          <div class="container">
-             <a href="#" class="portfolio__item" target="_blank">
-            <img
-              src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-              class="portfolio__img"
-            />
-          </a>
+        <div class="card-port">
+          <div class="container-port">
+            <a href="#" class="portfolio__item" target="_blank">
+              <img
+                src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+                class="portfolio__img"
+              />
+            </a>
             <h4>Project 2</h4>
-            <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero aut, voluptatibus impedit minus ex vel non maxime illum expedita earum quisquam quasi, ad quo nihil. Ut aut neque corporis pariatur.</p>
+            <p class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+              aut, voluptatibus impedit minus ex vel non maxime illum expedita
+              earum quisquam quasi, ad quo nihil. Ut aut neque corporis
+              pariatur.
+            </p>
           </div>
         </div>
 
-        <div class="card">
-          <div class="container">
+        <div class="card-port">
+          <div class="container-port">
             <a href="#" class="portfolio__item" target="_blank">
-            <img
-              src="https://images.pexels.com/photos/3912992/pexels-photo-3912992.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-              class="portfolio__img"
-            />
-          </a>
+              <img
+                src="https://images.pexels.com/photos/3912992/pexels-photo-3912992.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+                class="portfolio__img"
+              />
+            </a>
             <h4>Project 3</h4>
-            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, labore. Porro minus fugiat ex quo eos minima, doloribus accusantium facere quidem accusamus totam tempore sit nobis molestias quos asperiores voluptatibus!</p>
+            <p class="des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              labore. Porro minus fugiat ex quo eos minima, doloribus
+              accusantium facere quidem accusamus totam tempore sit nobis
+              molestias quos asperiores voluptatibus!
+            </p>
           </div>
         </div>
 
-        <div class="card">
-          <div class="container">
+        <div class="card-port">
+          <div class="container-port">
             <a href="#" class="portfolio__item" target="_blank">
-            <img
-              src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-              class="portfolio__img"
-            />
-          </a>
+              <img
+                src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+                class="portfolio__img"
+              />
+            </a>
             <h4>Project 4</h4>
-            <p class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam dolorum, enim eligendi architecto, recusandae vel eius excepturi ducimus consequatur accusamus sed libero saepe inventore voluptas at reiciendis, ipsam quidem illo.</p>
+            <p class="des">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
+              dolorum, enim eligendi architecto, recusandae vel eius excepturi
+              ducimus consequatur accusamus sed libero saepe inventore voluptas
+              at reiciendis, ipsam quidem illo.
+            </p>
           </div>
         </div>
       </div>
