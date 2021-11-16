@@ -49,7 +49,7 @@ body{
 }
 
 section{
-    padding: 0 2rem !important;
+    padding: 2rem !important;
 }
 
 img{
@@ -212,22 +212,6 @@ header{
     text-align: center;
     border-bottom: 5px solid var(--clr-accent);
 }
-
-.section__title--services{
-    color: var(--clr-accent);
-    position: relative;
-}
-
-.section__title--services::after{
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5rem auto 1em;
-    background: var(--clr-dark);
-    opacity: .25;
-}
-
 .services{
     margin-bottom: 4em;
 }
