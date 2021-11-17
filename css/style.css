@@ -519,14 +519,18 @@ b,
 
 .card-p {
   font-size: 0.8rem;
-  line-height: 4;
+  line-height: 2.5;
 }
 
 .card-css {
   margin: 20px;
   background: var(--clr-dark) !important;
-  max-height: 400px;
+  height: 270px;
   width: 500px;
   padding: 9px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.skills{
+  font-size: .9rem;
 }
