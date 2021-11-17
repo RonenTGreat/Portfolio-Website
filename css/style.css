@@ -450,7 +450,7 @@ header {
 .card-port {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 90%;
+  width: 75%;
   margin-bottom: 2em;
 }
 
@@ -526,11 +526,30 @@ b,
   margin: 20px;
   background: var(--clr-dark) !important;
   height: 270px;
-  width: 500px;
+  width: 300px;
   padding: 9px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .skills{
   font-size: .9rem;
+}
+
+@media(max-width: 320px){ 
+  .card-css{
+    height: 270px;
+    width: 200px;
+  }
+  .card-p {
+  font-size: 0.7rem;
+  line-height: 2;
+  }
+
+.social__list-link {
+  padding: 0;
+}
+.section__title--intro{
+  font-size: 2rem !important;
+}
+
 }
