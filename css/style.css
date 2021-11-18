@@ -617,7 +617,9 @@ label.error {
   color: red; }
 
 #message {
-  resize: vertical; }
+  resize: vertical;
+  height: auto; 
+}
 
 #form-message-warning, #form-message-success {
   display: none; }
