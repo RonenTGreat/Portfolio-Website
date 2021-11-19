@@ -600,7 +600,7 @@ b,
 
 .btn {
   border: none;
-  border-radius: 4px !important;
+  border-radius: 25px !important;
   border-color: var(--clr-accent) !important;
   margin-left: 1rem;
 }
