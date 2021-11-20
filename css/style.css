@@ -638,8 +638,9 @@ label.error {
 }
 
 #message {
-  resize: vertical;
   height: auto;
+  resize: none;
+  overflow-y: auto;
 }
 
 #form-message-warning,
