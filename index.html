@@ -249,7 +249,7 @@
             </div>
             <div class="col-md-6">
               
-              <form class="mb-5" method="POST" id="contactForm" name="contactForm">
+              <form class="mb-5" method="POST" id="contactForm" name="contactForm" data-netlify="true">
                 <div class="row">
                   <div class="col-md-12 form-group">
                     <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
@@ -271,6 +271,7 @@
                   </div>
                 </div>  
                 <div class="row">
+                  <div data-netlify-recaptcha="true"></div>
                   <div class="col-12">
                     <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4">
                   </div>
