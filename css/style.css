@@ -675,32 +675,33 @@ label.error {
 
 .cta{
   display: flex;
-  justify-content: space-between;
-  margin-top: 3rem;
+  justify-content: center;
+  margin-bottom: 5rem;
 }
 
 @media(max-width: 440px){
   .cta{
     display: block;
   }
-  .cta-resume{
+  .cta-resume, .cta-project{
     margin-top: 2rem;
+    margin-left: 3rem !important;
   }
 }
 
-/* Resume */
+/* Project button */
 
 .cta-project{
-  margin-right: 50px;
+  margin-right: 2rem;
 }
 
 .cta-project,
 .cta-project::after {
   padding: 16px 20px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   background: linear-gradient(45deg, transparent 5%, #fea82f 5%);
   border: 0;
-  border-radius: 1.3rem;
+  border-radius: 1.5rem;
   color: var(--clr-dark);
   font-weight: 600;
   letter-spacing: 3px;
@@ -799,13 +800,18 @@ label.error {
 
 /* Resume button */
 
+.cta-resume{
+  margin-left: 2rem;
+  filter: grayscale(1);
+}
+
 .cta-resume,
 .cta-resume::after {
   padding: 16px 20px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   background: linear-gradient(45deg, transparent 5%, #fea82f 5%);
   border: 0;
-  border-radius: 1.3rem;
+  border-radius: 1.5rem;
   color: var(--clr-dark);
   font-weight: 600;
   letter-spacing: 3px;
