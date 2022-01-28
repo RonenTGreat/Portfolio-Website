@@ -701,7 +701,7 @@ label.error {
   font-size: 2rem;
   background: linear-gradient(45deg, transparent 5%, #fea82f 5%);
   border: 0;
-  border-radius: 1.5rem;
+  border-radius: 1.7rem;
   color: var(--clr-dark);
   font-weight: 600;
   letter-spacing: 3px;
@@ -802,7 +802,15 @@ label.error {
 
 .cta-resume{
   margin-left: 2rem;
-  filter: grayscale(1);
+}
+
+.cta-resume a{
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+.cta-resume a:hover{
+  color: var(--clr-dark);
 }
 
 .cta-resume,
@@ -811,7 +819,7 @@ label.error {
   font-size: 2rem;
   background: linear-gradient(45deg, transparent 5%, #fea82f 5%);
   border: 0;
-  border-radius: 1.5rem;
+  border-radius: 1.6rem;
   color: var(--clr-dark);
   font-weight: 600;
   letter-spacing: 3px;
