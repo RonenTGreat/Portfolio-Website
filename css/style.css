@@ -462,7 +462,7 @@ header {
   padding: 20px 16px;
 }
 
-h4 {
+.project_heading {
   padding-top: 25px;
   color: var(--clr-accent);
   text-align: left;
